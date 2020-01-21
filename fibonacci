@@ -1,0 +1,18 @@
+var  assert  =  exigir ( 'assert' )
+
+ valores  var =  [  0 ,  1 ,  1 ,  2 ,  3 ,  5 ,  8 ,  13 ,  21 ,  34 ,  55 ,  89 ,  144 , 
+			   233 ,  377 ,  610 ,  987 ,  1597 ,  2584 ,  4181  ]
+ resultados  var =  [ ]
+para ( var  i = 0 ;  i < 30 ;  i ++ ) {	
+	resultados . empurrão ( fib ( i ) ) ;
+	if ( i  <  valores . comprimento )
+		afirmar . igual ( resultados [ i ] ,  valores [ i ] )
+}
+
+função  fib ( n )  {
+	if ( n  >  1 ) {
+		retornar  fib ( n - 1 )  +  fib ( n - 2 )
+	}  mais  {
+		return  n ;
+	}
+}
